@@ -5,6 +5,4 @@ public class Ex3_Herencia {
 		 Libro l2;
 		 System.out.println("hola");
 	}
-
-	
 }
