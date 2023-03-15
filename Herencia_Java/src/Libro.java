@@ -1,6 +1,30 @@
 
 public class Libro {
 	private double ISBN;
+	public double getISBN() {
+		return ISBN;
+	}
+	public void setISBN(double iSBN) {
+		ISBN = iSBN;
+	}
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	public int getNumPag() {
+		return numPag;
+	}
+	public void setNumPag(int numPag) {
+		this.numPag = numPag;
+	}
 	private String titulo;
 	private String autor;
 	private int numPag;
@@ -21,6 +45,10 @@ public class Libro {
 		this.titulo=title;
 		this.autor=author;
 		this.numPag=nuPag;
+	}
+	public String toString()
+	{
+		return ("El libro "+this.titulo+" con autor "+this.autor+" que tiene "+this.numPag+" paginas, tiene el ISBN de "+ this.ISBN);
 	}
 }
 
